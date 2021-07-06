@@ -1,0 +1,6 @@
+.invisible {
+  display: none;
+}
+.important {
+  background-color: yellow;
+}
