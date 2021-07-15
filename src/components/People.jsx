@@ -9,7 +9,6 @@ export default class People extends React.Component {
     email: this.props.email,
     visible: "",
     important: "",
-    requestSent: false,
   };
   handelDelete = () => {
     this.setState({ visible: "invisible" });
@@ -19,17 +18,12 @@ export default class People extends React.Component {
       ? this.setState({ important: "important" })
       : this.setState({ important: "" });
   };
-  handelAddFriend = () => {
-    this.setState({ requestSent: !this.state.requestSent });
-  };
+
   render() {
     return (
       <div className={`li ${this.state.visible} ${this.state.important}`}>
         <div>
           <span>{this.state.name}</span>
-          <span>
-            <button onClick={this.handelAddFriend}>Add Friend</button>
-          </span>
         </div>
         <div>{`${this.state.work}, ${this.state.city}`}</div>
         <div>{`${this.state.phone}     ${this.state.email}`}</div>

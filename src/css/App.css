@@ -4,3 +4,30 @@
 .important {
   background-color: yellow;
 }
+
+.app {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+li {
+  list-style: none;
+}
+
+.page {
+  flex: 3 1 85%;
+}
+nav {
+  flex: 1 1 15%;
+  background-color: rgb(190, 255, 233);
+}
+
+.heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.li {
+  padding: 8px;
+  margin: 2px;
+}
