@@ -1,5 +1,6 @@
 import React from "react";
-import PeopleList from "../components/PeopleList";
+import PeopleList from "./PeopleList";
+import AddFriendPage from "./AddFriend";
 import "../css/App.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
@@ -50,13 +51,17 @@ export default class App extends React.Component {
 const Home = () => {
   return (
     <div className="page">
-      <div className="heading">
-        <span> Your Friends List</span>
-      </div>
+      <div className="heading">Your Friends List</div>
+      <div className="subHeading">Find all your added friends here.</div>
+      <hr />
       <PeopleList />
     </div>
   );
 };
 const AddFriend = () => {
-  return <div className="page">Add Friend</div>;
+  return (
+    <div className="page">
+      <AddFriendPage />
+    </div>
+  );
 };

@@ -1,5 +1,5 @@
 import React from "react";
-
+import bussinessIcon from "../icons/team-leader.svg";
 export default class People extends React.Component {
   state = {
     name: this.props.name,
@@ -22,14 +22,19 @@ export default class People extends React.Component {
   render() {
     return (
       <div className={`li ${this.state.visible} ${this.state.important}`}>
-        <div>
+        <div className="liName">
           <span>{this.state.name}</span>
         </div>
-        <div>{`${this.state.work}, ${this.state.city}`}</div>
-        <div>{`${this.state.phone}     ${this.state.email}`}</div>
-        <button onClick={this.handelImportant}>Important</button>
-        <button onClick={this.handelDelete}>Delete</button>
-        <button>Edit</button>
+        <div>
+          <img src={bussinessIcon} alt="Bussiness Icon" />
+          {`${this.state.work}, ${this.state.city}`}
+        </div>
+        <div className="personalInfo">{`${this.state.phone}     ${this.state.email}`}</div>
+        <div className="buttons">
+          <button onClick={this.handelImportant}>Important</button>
+          <button onClick={this.handelDelete}>Delete</button>
+          <button>Edit</button>
+        </div>
       </div>
     );
   }

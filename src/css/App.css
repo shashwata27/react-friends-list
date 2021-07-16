@@ -1,13 +1,30 @@
+* {
+  color: #042b25;
+}
+.heading {
+  font-size: 28px;
+  font-weight: 900;
+}
+.subHeading {
+  color: #505e5b;
+  padding-bottom: 0px;
+  font-weight: 600;
+}
 .invisible {
   display: none;
 }
-.important {
-  background-color: yellow;
+.li.important {
+  background-color: #89e041;
+  box-shadow: 2px 4px 2px 2px #52c82a;
 }
 
 .app {
   display: flex;
   flex-direction: row-reverse;
+  background-color: #fafafb;
+
+  padding: 10px 80px 0;
+  margin: -10px;
 }
 
 li {
@@ -19,7 +36,7 @@ li {
 }
 nav {
   flex: 1 1 15%;
-  background-color: rgb(190, 255, 233);
+  min-height: 95vh;
 }
 
 .heading {
@@ -28,6 +45,69 @@ nav {
   justify-content: space-between;
 }
 .li {
-  padding: 8px;
-  margin: 2px;
+  padding: 15px 20px;
+  margin: 10px 10px 10px 20px;
+  background-color: #9cc1b7;
+  border-radius: 20px;
+  text-align: left;
+  box-shadow: 0 3px 5px rgba(4, 43, 37, 0.5);
+}
+
+img {
+  max-height: 15px;
+  margin: 4px 3px 0;
+  filter: invert(30%);
+}
+
+.liName {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+button {
+  background-color: rgb(42, 42, 252);
+  border: rgb(134, 134, 255);
+  border-radius: 10px;
+  margin: 10px 3px 2px;
+  padding: 10px 8px;
+  color: #fafafb;
+  font-weight: 600;
+}
+button:hover {
+  box-shadow: 2px 3px 3px rgba(42, 42, 252, 0.3);
+}
+
+.personalInfo {
+  font-size: 20px;
+  margin-top: 4px;
+}
+
+hr {
+  color: #505e5b;
+  border: 0.2px #505e5b solid;
+  margin-bottom: 30px;
+}
+fieldset {
+  text-align: left;
+  border: none;
+}
+legend {
+  font-size: 20px;
+  font-weight: 800;
+}
+input {
+  background-color: #52c82a;
+
+  padding: 10px 20px;
+  margin: 10px 5px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+}
+::placeholder {
+  color: #042b25;
+}
+input:hover {
+  box-shadow: 2px 2px 4px #89e041;
+  border: #042b25;
 }
