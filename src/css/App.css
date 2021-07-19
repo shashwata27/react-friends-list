@@ -12,6 +12,7 @@
 }
 .invisible {
   display: none;
+  visibility: hidden;
 }
 .li.important {
   background-color: #89e041;
