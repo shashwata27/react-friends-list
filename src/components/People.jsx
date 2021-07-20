@@ -19,6 +19,7 @@ export default class People extends React.Component {
 
   render() {
     const { name, work, city, phone, email } = this.props.details;
+
     return (
       <div className={`li ${this.state.visible} ${this.state.important}`}>
         <div className="liName">
