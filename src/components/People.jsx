@@ -1,5 +1,14 @@
 import React from "react";
 import bussinessIcon from "../icons/team-leader.svg";
+import PropTypes from "prop-types";
+
+People.propTypes = {
+  id: PropTypes.number,
+  details: PropTypes.object,
+  deleteFunc: PropTypes.func,
+  importantFunc: PropTypes.func,
+};
+
 export default class People extends React.Component {
   state = {
     visible: "",
